@@ -8,101 +8,12 @@ import {
   Alert,
 } from 'react-native';
 import React from 'react';
+import Home from './source/assets/pages/home';
 
 const App = () => {
   return (
     <View>
-
-     <View style={{
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        height: 60,
-        alignItems: 'center',
-        backgroundColor: 'red',
-        marginHorizontal: 16,
-        marginTop: 16,
-        padding: 16,
-        borderRadius: 40,
-      }}>
-      <Image
-        resizeMode="contain"
-        style={{height: 40, width: 150}}
-        Source={require('./source/assets/Images/smkmhs.png')}
-      />
-      <View
-        style={{
-          height: 40,
-          width: 40,
-          borderRadius: 20,
-          backgroundColor: 'yellow',}}>
-      </View>
-          
-    </View>
-          <View style={{flexDirection: 'row'}}>
-          <View style={{
-            borderWidth: 1,
-            padding: 12,
-            flex:1,
-            marginTop:16
-          }}>
-          <View style={{
-            height: 200, 
-            backgroundColor: 'red',
-            borderRadius:14
-          }}></View>
-          <Text>Teh oolong</Text>
-          <Text>Rp.5000</Text>
-          </View>
-          <View style={{
-            borderWidth: 1,
-            padding: 12,
-            flex:1,
-            marginTop:16
-          }}>
-          <View style={{
-            height: 200, 
-            backgroundColor: 'red',
-            borderRadius:14
-          }}></View>
-          <Text>Nasi Kuning</Text>
-          <Text>Rp.10.000</Text>
-          </View>
-          
-          </View>
-            <View style={{flexDirection: 'row'}}>
-          <View style={{
-            borderWidth: 1,
-            padding: 12,
-            flex:1,
-            
-          }}>
-          <View style={{
-            height: 200, 
-            backgroundColor: 'red',
-            borderRadius:14
-          }}></View>
-          <Text>Teh oolong</Text>
-          <Text>Rp.5000</Text>
-          </View>
-          <View style={{
-            borderWidth: 1,
-            padding: 12,
-            flex:1,
-          }}>
-          <View style={{
-            height: 200, 
-            backgroundColor: 'red',
-            borderRadius:14
-          }}></View>
-          <Text>Nasi Kuning</Text>
-          <Text>Rp.10.000</Text>
-          </View>
-          
-          </View>
-          
-          
-          
-
+        <Home/>
     </View>
     
   
