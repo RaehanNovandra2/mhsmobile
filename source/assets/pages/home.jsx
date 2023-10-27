@@ -33,11 +33,19 @@ import {
           style={{
             height: 40,
             width: 40,
-            borderRadius: 20,
-            backgroundColor: 'yellow',}}>
+            borderRadius: 20,}}>
+        <View>
+          <Image resizeMode='contain' style={{height:40, width:40}}
+          source={require('../Images/menutransparan.png')}/>
         </View>
-            
+        </View>
       </View>
+      <View>
+          <View>
+            <Text style={{marginTop:32}}>Selamat datang di</Text>
+            <Text style={{fontSize:32, fontWeight:'bold', marginTop:4, color:'black'}}>Kantin Multistudi</Text>
+          </View>
+          </View>
             <View style={{flexDirection: 'row'}}>
               <TouchableOpacity onPress={()=> navigation.navigate ('Detail') }>
             <View style={{
