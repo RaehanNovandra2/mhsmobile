@@ -9,7 +9,7 @@ import {
   } from 'react-native';
   import React from 'react';
   
-  const Home = () => {
+  const Home = ({navigation}) => {
     return (
       <View>
   
@@ -39,8 +39,8 @@ import {
             
       </View>
             <View style={{flexDirection: 'row'}}>
+              <TouchableOpacity onPress={()=> navigation.navigate ('Detail') }>
             <View style={{
-              borderWidth: 1,
               padding: 12,
               flex:1,
               marginTop:16
@@ -52,14 +52,17 @@ import {
             }}>
               <View>
               <Image resizeMode='contain' style={{height:200, width:188, borderRadius:14}}
-            source={require('../Images/tehoolong.jpg')}/>
+            source={require('../Images/bargerayam.jpg')}/>
+            
               </View>
+            
             </View>
-            <Text>Teh oolong</Text>
-            <Text>Rp.5000</Text>
+            
+            <Text style={{fontWeight:'bold', color:'black'}}>Burger Ayam</Text>
+            <Text style={{fontWeight:'bold', color:'red'}}>Rp.20.000</Text>
             </View>
+            </TouchableOpacity>
             <View style={{
-              borderWidth: 1,
               padding: 12,
               flex:1,
               marginTop:16
@@ -70,18 +73,17 @@ import {
               borderRadius:14
             }}>
               <View>
-                <Image resizeMode='contain' style={{height:200, width:189,}}
-            source={require('../Images/nasi diberi kunyit sehingga berwarna kuning.jpg')}/>
+                <Image resizeMode='contain' style={{height:200, width:195, borderRadius:14}}
+                source={require('../Images/spageti.jpg')}/>
+              </View>
             </View>
-            </View>
-            <Text>Nasi Kuning</Text>
-            <Text>Rp.10.000</Text>
+            <Text style={{fontWeight:'bold', color:'black'}}>Spaghetti</Text>
+            <Text style={{fontWeight:'bold', color:'red'}}>Rp.15.000</Text>
             </View>
             
             </View>
               <View style={{flexDirection: 'row'}}>
             <View style={{
-              borderWidth: 1,
               padding: 12,
               flex:1,
               
@@ -90,12 +92,14 @@ import {
               height: 200, 
               backgroundColor: 'red',
               borderRadius:14
-            }}></View>
-            <Text>more bullet</Text>
-            <Text>Rp.5000</Text>
+            }}>
+              <Image resizeMode='contain' style={{height:200, width:190, borderRadius:14}}
+              source={require('../Images/tehoolong.jpg')}/>
+            </View>
+            <Text style={{fontWeight:'bold', color:'black'}}>Teh oolong</Text>
+            <Text style={{fontWeight:'bold', color:'red'}}>Rp.5000</Text>
             </View>
             <View style={{
-              borderWidth: 1,
               padding: 12,
               flex:1,
             }}>
@@ -103,9 +107,14 @@ import {
               height: 200, 
               backgroundColor: 'red',
               borderRadius:14
-            }}></View>
-            <Text>hastalavista</Text>
-            <Text>Rp.10.000</Text>
+            }}>
+              <View>
+                <Image resizeMode='contain' style={{height:200, width:190, borderRadius:14}}
+                source={require('../Images/susu.jpg')}/>
+              </View>
+            </View>
+            <Text style={{fontWeight:'bold', color:'black'}}>Susu</Text>
+            <Text style={{fontWeight:'bold', color:'red'}}>Rp.10.000</Text>
             </View>
             
             </View>
