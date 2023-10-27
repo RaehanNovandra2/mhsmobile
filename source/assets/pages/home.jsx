@@ -48,8 +48,13 @@ import {
             <View style={{
               height: 200, 
               backgroundColor: 'red',
-              borderRadius:14
-            }}></View>
+              borderRadius:14,
+            }}>
+              <View>
+              <Image resizeMode='contain' style={{height:200, width:188, borderRadius:14}}
+            source={require('../Images/tehoolong.jpg')}/>
+              </View>
+            </View>
             <Text>Teh oolong</Text>
             <Text>Rp.5000</Text>
             </View>
@@ -63,7 +68,12 @@ import {
               height: 200, 
               backgroundColor: 'red',
               borderRadius:14
-            }}></View>
+            }}>
+              <View>
+                <Image resizeMode='contain' style={{height:200, width:189,}}
+            source={require('../Images/nasi diberi kunyit sehingga berwarna kuning.jpg')}/>
+            </View>
+            </View>
             <Text>Nasi Kuning</Text>
             <Text>Rp.10.000</Text>
             </View>
